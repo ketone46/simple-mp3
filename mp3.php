@@ -59,7 +59,7 @@
    $videos .= sprintf('<p>%s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%s)</p>', $searchResult['snippet']['title'],"<a href=download.php?id=".$searchResult['id']['videoId'].">Download</a>");
 
   
-     } //Last.fm loop ends.
+     } //Last.fm JSON data loop ends.
 
 echo $videos;
 ?>
