@@ -56,7 +56,7 @@
                   }
 				  
 				  //Final Links.Download Link includes the youtube id which will be  forwarded to download page.
-   $videos .= sprintf('<p>%s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%s)</p>', $searchResult['snippet']['title'],"<a href=http://simplemp3.ga/download.php?id=".$searchResult['id']['videoId'].">Download</a>");
+   $videos .= sprintf('<p>%s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%s)</p>', $searchResult['snippet']['title'],"<a href=download.php?id=".$searchResult['id']['videoId'].">Download</a>");
 
   
      } //Last.fm loop ends.
