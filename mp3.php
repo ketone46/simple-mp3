@@ -1,6 +1,8 @@
 <?php
     $q = $_GET['q'];          //Search Term.
 	
+	$q_en = urlencode($q); //encoding for further use
+	
 	$tracks = '';             //For Storing tracks. 
 	
 	$albums = '';             //For Storing albums. 
@@ -71,7 +73,7 @@
 		 $albums .= "<p><a href=album_info.php?album=".$album_q."&artist=".$album_a.">".$album['name']." by ".$album['artist']."</p>";
 	 }
 
-echo "<h2>Tracks</h2>".$tracks."<a href=tracks.php?q=".$q.">Load More</a><br>";
-echo "<h2>Albums</h2>".$albums."<a href=albums.php?q=".$q.">Load More</a><br>";
+echo "<h2>Tracks</h2>".$tracks."<a href=tracks.php?q=".$q_en.">Load More</a><br>";
+echo "<h2>Albums</h2>".$albums."<a href=albums.php?q=".$q_en.">Load More</a><br>";
 
 ?>
