@@ -1,4 +1,4 @@
-# simple-mp3-search
+# simple-mp3
 My first Github project. A simple mp3 search script using youtube and last.fm .
 
 The details of usage has been mentiond in comments in the code.
