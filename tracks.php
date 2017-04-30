@@ -52,9 +52,9 @@
                    $htmlBody .= sprintf('<p>An client error occurred: <code>%s</code></p>',
                    htmlspecialchars($e->getMessage()));
                   }
-				  
+		$title_enc = urlencode($q3); //Preview Search Term
 				  //Final Links.Download Link includes the youtube id which will be  forwarded to download page.
-   $videos .= sprintf('<p>%s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%s)</p>', $searchResult['snippet']['title'],"<a href=download.php?id=".$searchResult['id']['videoId'].">Download</a>");
+   $videos .= sprintf('<p>%s &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (%s) &nbsp;&nbsp;&nbsp;&nbsp;(%s)</p>', $searchResult['snippet']['title'],"<a href=download.php?id=".$searchResult['id']['videoId'].">Download</a>","<a href=play.php?id=".$title_enc.">Play Preview</a>");
 
   
      } //Last.fm loop ends.
